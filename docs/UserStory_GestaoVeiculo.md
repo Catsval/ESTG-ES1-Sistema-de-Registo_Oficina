@@ -1,7 +1,7 @@
-### Gestão de Veículos por Funcionários Autorizados
+### Gestão de Veículos por Funcionários
 
 **Como** gerente de uma oficina mecânica,  
-**Gostaria de** delegar a responsabilidade de adicionar novos veículos ao sistema apenas a funcionários autorizados,  
+**Gostaria de** delegar a responsabilidade de adicionar novos veículos ao sistema apenas a funcionários,  
 **Para que** possamos manter um registro preciso dos veículos dos clientes e garantir a integridade dos dados.
 
 **Critérios de Aceitação**:
