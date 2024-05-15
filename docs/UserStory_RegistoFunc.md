@@ -1,4 +1,4 @@
-### Registro de Funcionários por Funcionários Autorizados
+### Registro de Funcionários por Funcionários
 
 **Como** gerente de uma oficina mecânica,  
 **Gostaria de** ter a capacidade de designar funcionários autorizados para registrar novos funcionários em nosso sistema,  
