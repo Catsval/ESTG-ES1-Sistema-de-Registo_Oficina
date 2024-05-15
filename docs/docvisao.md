@@ -17,6 +17,7 @@ A equipa de desenvolvimento é composta por:
 - Ivo Oliveira (https://github.com/Bashizz)
 
 ## Características do Produto - Lista de Funcionalidades
+- Página Principal: Apresenta links para as funcionalidades essenciais do sistema, adaptando-se dinamicamente com base no tipo de usuário logado. Para funcionários, são exibidos todos os links para acesso completo às funcionalidades. Para clientes, apenas os links para registro de cliente, login, gestão de veículos e histórico de serviços são mostrados.
 - Registo de Funcionários: Permite adicionar, visualizar, editar e eliminar informações do funcionário da oficina.
 - Registo de Clientes: Permite registar, visualizar, editar e eliminar informação do cliente, incluindo os seus veículos e histórico de serviços.
 - Gestão de Veículos: Possibilita o registo e a manutenção das informações dos veículos dos clientes, incluindo marca, modelo, ano e matrícula.
