@@ -7,9 +7,9 @@
 **Critérios de Aceitação**:
 1. **Exibição de Histórico**: A página deve exibir uma lista completa dos serviços realizados, incluindo detalhes como:
    - Data do serviço
-   - Descrição do serviço
+   - Descrição do serviço (COLOCAR O CAMPO)
    - Veículo atendido
-   - Cliente associado
+   - Cliente associado (NÃO TEMOS)
    - Funcionário responsável
 3. **Filtros e Pesquisa**: A página deve permitir a filtragem e pesquisa dos serviços por diferentes critérios, como data, veículo, cliente, e funcionário.
 4. **Acesso Completo para Funcionários**: Todos os funcionários devem ter acesso à página de histórico de serviços e suas funcionalidades.
