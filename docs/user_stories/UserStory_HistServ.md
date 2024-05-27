@@ -1,12 +1,17 @@
 ### Registro de Histórico de Serviços por Funcionários
 
-**Como** gerente de uma oficina mecânica,  
-**Gostaria de** delegar a responsabilidade de registrar o histórico de serviços apenas a funcionários,  
-**Para que** possamos manter um registro detalhado e preciso dos serviços prestados aos clientes.
+**Como** um funcionário da oficina,  
+**Gostaria de** aceder a página de histórico de serviços,  
+**Para que** que eu possa visualizar e gerenciar o histórico de serviços realizados na oficina.
 
 **Critérios de Aceitação**:
-1. **Autenticação de Funcionários**: Apenas funcionários autorizados, como mecânicos e gerentes, devem ter permissão para acessar a página de registro de histórico de serviços.
-2. **Formulário de Registro de Serviços**: Deve haver um formulário específico para o registro de novos serviços, com campos para detalhes como data, descrição do serviço e valor cobrado.
-3. **Validação de Campos Obrigatórios**: Todos os campos obrigatórios devem ser claramente indicados e validados para garantir que as informações essenciais sejam fornecidas antes de enviar o formulário.
-4. **Registro de Novo Serviço**: Após o preenchimento correto do formulário e envio, o novo serviço deve ser registrado no sistema com suas informações devidamente documentadas e associadas ao cliente correspondente.
-5. **Feedback de Sucesso**: Após o registro bem-sucedido do novo serviço, o usuário responsável deve receber uma confirmação clara e ser redirecionado de volta à página principal de histórico de serviços.
+1. **Exibição de Histórico**: A página deve exibir uma lista completa dos serviços realizados, incluindo detalhes como:
+   - Data do serviço
+   - Descrição do serviço
+   - Veículo atendido
+   - Cliente associado
+   - Funcionário responsável
+3. **Filtros e Pesquisa**: A página deve permitir a filtragem e pesquisa dos serviços por diferentes critérios, como data, veículo, cliente, e funcionário.
+4. **Acesso Completo para Funcionários**: Todos os funcionários devem ter acesso à página de histórico de serviços e suas funcionalidades.
+5. **Layout Intuitivo**: O layout da página deve ser intuitivo e fácil de usar, com opções de filtragem e pesquisa claramente visíveis e acessíveis.
+6. **Testes de Usabilidade**: A funcionalidade da página de histórico de serviços deve ser testada com usuários reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
