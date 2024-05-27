@@ -1,4 +1,4 @@
-### Registro de Clientes
+### Registo de Clientes
 
 **Como** um funcionário da oficina,  
 **Gostaria de** aceder à página de registo de clientes,  
