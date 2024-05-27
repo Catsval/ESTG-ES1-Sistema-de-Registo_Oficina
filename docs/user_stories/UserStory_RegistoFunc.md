@@ -1,4 +1,4 @@
-### Registro de Funcionários
+### Registo de Funcionários
 
 **Como** um funcionário da oficina,  
 **Gostaria de** aceder à página de registo de funcionários,  
