@@ -1,12 +1,16 @@
-### Gestão de Veículos por Funcionários
+### Gestão de Veículos na Oficina
 
-**Como** gerente de uma oficina mecânica,  
-**Gostaria de** delegar a responsabilidade de adicionar novos veículos ao sistema apenas a funcionários,  
-**Para que** possamos manter um registro preciso dos veículos dos clientes e garantir a integridade dos dados.
+**Como** um funcionário da oficina,  
+**Gostaria de** acessar a página de gestão de veículos,  
+**Para que** que eu possa adicionar, editar e visualizar informações detalhadas sobre os veículos atendidos na oficina.
 
 **Critérios de Aceitação**:
-1. **Autenticação de Funcionários**: Apenas funcionários autorizados, como gerentes e mecânicos, devem ter permissão para acessar a página de gestão de veículos.
-2. **Formulário de Adição de Veículos**: Deve haver um formulário específico para a adição de novos veículos, com campos para detalhes como marca, modelo, ano e número de matrícula.
-3. **Validação de Campos Obrigatórios**: Todos os campos obrigatórios devem ser claramente indicados e validados para garantir que as informações essenciais sejam fornecidas antes de enviar o formulário.
-4. **Adição de Novo Veículo**: Após o preenchimento correto do formulário e envio, o novo veículo deve ser adicionado ao sistema com suas informações devidamente registradas e associadas ao cliente correspondente, se aplicável.
-5. **Feedback de Sucesso**: Após a adição bem-sucedida do novo veículo, o usuário responsável deve receber uma confirmação clara e ser redirecionado de volta à página principal de gestão de veículos.
+1. **Exibição de Veículos**: A página deve exibir uma lista completa dos veículos registrados na oficina, incluindo detalhes como:
+   - Marca e modelo
+   - Placa do veículo
+   - Nome do proprietário (cliente)
+   - Data de registro
+3. **Funcionalidades de Adição e Edição**: A página deve permitir adicionar novos veículos, incluindo campos para todas as informações relevantes. A página deve permitir editar os detalhes dos veículos existentes.
+4. **Acesso Completo para Funcionários**: Todos os funcionários devem ter acesso à página de gestão de veículos e suas funcionalidades.
+5. **Layout Intuitivo**: O layout da página deve ser intuitivo e fácil de usar, com opções de filtragem, pesquisa, adição e edição claramente visíveis e acessíveis.
+6. **Testes de Usabilidade**: A funcionalidade da página de gestão de veículos deve ser testada com usuários reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
