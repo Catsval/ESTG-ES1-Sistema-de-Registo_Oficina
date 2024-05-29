@@ -1,4 +1,4 @@
-### Registro de Histórico de Serviços
+### Registo de Histórico de Serviços
 
 **Como** um funcionário da oficina,  
 **Gostaria de** aceder a página de histórico de serviços,  
