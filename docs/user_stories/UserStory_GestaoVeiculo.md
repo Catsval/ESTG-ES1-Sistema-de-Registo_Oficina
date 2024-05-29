@@ -8,7 +8,7 @@
 1. **Exibição de Veículos**: A página deve exibir uma lista completa dos veículos registrados na oficina, incluindo detalhes como:
    - Marca e modelo
    - Placa do veículo
-   - Nome do proprietário (cliente) (NÃO TEMOS)
+   - ID do cliente (NÃO TEMOS)
    - Data de registo (NÃO TEMOS)
 3. **Funcionalidades de Adição e Edição**: A página deve permitir adicionar novos veículos, incluindo campos para todas as informações relevantes. A página deve permitir editar os detalhes dos veículos existentes.
 4. **Acesso Completo para Funcionários**: Todos os funcionários devem ter acesso à página de gestão de veículos e suas funcionalidades.
