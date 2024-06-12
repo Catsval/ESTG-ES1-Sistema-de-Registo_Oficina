@@ -25,9 +25,3 @@ O funcionário pode adicionar novos serviços ao histórico, garantindo que as i
 4. O funcionário clica no botão "Adicionar Serviço".
 5. O sistema valida os dados inseridos.
 6. O sistema adiciona o novo serviço ao histórico de serviços.
-
-## Fluxos Alternativos:
-### A1: Campos Obrigatórios Não Preenchidos
-- O funcionário deixa um ou mais campos obrigatórios em branco.
-- O sistema exibe uma mensagem de erro indicando que todos os campos obrigatórios devem ser preenchidos.
-- O fluxo retorna ao passo 3 do fluxo principal.
