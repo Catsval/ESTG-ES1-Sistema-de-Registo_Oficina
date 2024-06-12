@@ -13,5 +13,4 @@
    - Funcionário responsável
 3. **Filtros e Pesquisa**: A página deve permitir a filtragem e pesquisa dos serviços por diferentes critérios, como data, veículo, cliente, e funcionário.
 4. **Acesso Completo para Funcionários**: Todos os funcionários devem ter acesso à página de histórico de serviços e suas funcionalidades.
-5. **Layout Intuitivo**: O layout da página deve ser intuitivo e fácil de usar, com opções de filtragem e pesquisa claramente visíveis e acessíveis.
-6. **Testes de Usabilidade**: A funcionalidade da página de histórico de serviços deve ser testada com usuários reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
+5. **Testes de Usabilidade**: A funcionalidade da página de histórico de serviços deve ser testada com usuários reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
