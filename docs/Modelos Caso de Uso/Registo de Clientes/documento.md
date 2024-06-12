@@ -7,21 +7,24 @@ Registo de Clientes
 Funcionário
 
 ## Pré-condições:
-O funcionário deve ter acesso à página de registo de clientes.
+O funcionário deve ter acesso à página de registo de clientes, estando devidamente autenticado no sistema, se aplicável.
 
 ## Pós-condições:
-O cliente aparece na lista de clientes registados na interface do usuário.
+O novo cliente aparece na lista de clientes registrados na interface do usuário, visível imediatamente após a inserção dos dados.
 
 ## Fluxo Principal:
 1. O funcionário navega para a página de registo de clientes.
-2. O funcionário preenche o campo "Nome" com o nome do cliente.
-3. O funcionário preenche o campo "Veículos" com a descrição dos veículos do cliente.
-4. O funcionário clica no botão "Adicionar Cliente".
-5. O sistema valida os dados inseridos.
-6. O sistema adiciona os dados do cliente na tabela exibida na página.
+2. O funcionário preenche o campo "Nome" com o nome completo do cliente.
+3. O funcionário preenche o campo "Contacto" com o número de telefone ou e-mail do cliente.
+4. O funcionário preenche o campo "Endereço" com o endereço do cliente.
+5. O funcionário clica no botão "Adicionar Cliente".
+6. O sistema valida os dados inseridos.
+7. O sistema gera um ID único para o cliente.
+8. O sistema adiciona os dados do cliente, incluindo o ID gerado, na tabela exibida na página.
 
 ## Fluxos Alternativos:
 ### A1: Campos Obrigatórios Não Preenchidos
 - O funcionário deixa um ou mais campos obrigatórios em branco.
 - O sistema exibe uma mensagem de erro indicando que todos os campos obrigatórios devem ser preenchidos.
 - O fluxo retorna ao passo 2 do fluxo principal.
+
