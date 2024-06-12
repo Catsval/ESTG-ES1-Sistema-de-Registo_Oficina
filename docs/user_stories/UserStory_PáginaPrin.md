@@ -11,6 +11,6 @@
     - Histórico de Serviços
     - Gestão de Veículos
 2. **Acesso para Funcionários**: Todos os funcionários devem ter acesso a todos os links mencionados acima.
-3. **Layout Intuitivo e Navegação Fácil**: O layout da página principal deve ser intuitivo e fácil de usar. Os links devem ser claramente visíveis e organizados para facilitar a navegação rápida e eficiente.
+3. **Navegação Fácil**: Os links devem ser claramente visíveis e organizados para facilitar a navegação rápida e eficiente.
 5. **Adaptação Dinâmica**: O conteúdo da página principal deve ser consistente para todos os funcionários, garantindo uma experiência uniforme e relevante.
 6. **Testes de Usabilidade**: A funcionalidade da página principal deve ser testada com utilizadores reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
