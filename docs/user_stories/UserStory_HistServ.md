@@ -1,8 +1,11 @@
 ### Registo de Histórico de Serviços
 
 **Como** um funcionário da oficina,
+
 **Gostaria** de acessar a página de gestão do histórico de serviços,
+
 **Para** visualizar e gerenciar os serviços realizados na oficina, e também adicionar novos serviços ao histórico.
+
 **Critérios de Aceitação**:
 1. **Exibição de Histórico:** A página deve exibir uma lista completa dos serviços realizados, incluindo detalhes como data, descrição e valor do serviço.
 2. **Adição de Serviços:** A página deve permitir que os funcionários adicionem novos serviços ao histórico, preenchendo os seguintes campos:
