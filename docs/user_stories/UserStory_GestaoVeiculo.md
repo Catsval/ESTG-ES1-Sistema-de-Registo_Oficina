@@ -6,8 +6,10 @@
 (SÓ EXISTE A FUNCIONALIDADE DE ADICIONAR VEICULOS)
 **Critérios de Aceitação**:
 1. **Exibição de Veículos**: A página deve exibir uma lista completa dos veículos registrados na oficina, incluindo detalhes como:
-   - Marca e modelo
-   - Placa do veículo
+   - Marca
+   - Modelo
+   - Ana
+   - Matrícula do veículo
    - ID do cliente (NÃO TEMOS)
    - Data de registo (NÃO TEMOS)
 3. **Funcionalidades de Adição e Edição**: A página deve permitir adicionar novos veículos, incluindo campos para todas as informações relevantes. A página deve permitir editar os detalhes dos veículos existentes.
