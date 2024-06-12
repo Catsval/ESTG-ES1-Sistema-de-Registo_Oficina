@@ -21,10 +21,3 @@ O novo cliente aparece na lista de clientes registrados na interface do usuário
 6. O sistema valida os dados inseridos.
 7. O sistema gera um ID único para o cliente.
 8. O sistema adiciona os dados do cliente, incluindo o ID gerado, na tabela exibida na página.
-
-## Fluxos Alternativos:
-### A1: Campos Obrigatórios Não Preenchidos
-- O funcionário deixa um ou mais campos obrigatórios em branco.
-- O sistema exibe uma mensagem de erro indicando que todos os campos obrigatórios devem ser preenchidos.
-- O fluxo retorna ao passo 2 do fluxo principal.
-
