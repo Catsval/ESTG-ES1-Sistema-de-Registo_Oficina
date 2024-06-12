@@ -4,7 +4,7 @@
 Navegação na Página Principal
 
 ## Ator Principal:
-Funcionário da Oficina
+Funcionário
 
 ## Pré-condições:
 - O funcionário está autenticado no sistema.
