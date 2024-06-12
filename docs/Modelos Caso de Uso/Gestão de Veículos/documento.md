@@ -23,9 +23,3 @@ O novo veículo aparece na lista de veículos registrados na interface do usuár
 8. O funcionário clica no botão "Adicionar Veículo".
 9. O sistema valida os dados inseridos.
 10. O sistema adiciona os dados do veículo na tabela exibida na página.
-
-## Fluxos Alternativos:
-### A1: Campos Obrigatórios Não Preenchidos
-- O funcionário deixa um ou mais campos obrigatórios em branco.
-- O sistema exibe uma mensagem de erro indicando que todos os campos obrigatórios devem ser preenchidos.
-- O fluxo retorna ao passo 2 do fluxo principal.
