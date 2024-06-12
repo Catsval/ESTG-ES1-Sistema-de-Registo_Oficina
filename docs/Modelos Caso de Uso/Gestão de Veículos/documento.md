@@ -18,9 +18,11 @@ O novo veículo aparece na lista de veículos registrados na interface do usuár
 3. O funcionário preenche o campo "Modelo" com o modelo do veículo.
 4. O funcionário preenche o campo "Ano" com o ano de fabricação do veículo.
 5. O funcionário preenche o campo "Matrícula" com a matrícula do veículo.
-6. O funcionário clica no botão "Adicionar Veículo".
-7. O sistema valida os dados inseridos.
-8. O sistema adiciona os dados do veículo na tabela exibida na página.
+6. O funcionário preenche o campo "ID do cliente" com a matrícula do veículo.
+7. O funcionário preenche o campo "Data de registo" com a matrícula do veículo.
+8. O funcionário clica no botão "Adicionar Veículo".
+9. O sistema valida os dados inseridos.
+10. O sistema adiciona os dados do veículo na tabela exibida na página.
 
 ## Fluxos Alternativos:
 ### A1: Campos Obrigatórios Não Preenchidos
