@@ -16,8 +16,8 @@ O novo funcionário aparece na lista de funcionários registrados na interface d
 1. O funcionário navega para a página de registo de funcionários.
 2. O funcionário preenche o campo "Nome" com o nome completo do funcionário.
 3. O funcionário preenche o campo "Cargo" com o cargo do funcionário.
-4. O funcionário preenche o campo "Contacto" com o número de telefone ou e-mail do funcionário.
-5. O funcionário preenche outros campos relevantes conforme necessário.
+4. O funcionário preenche o campo "Contacto" com o número de telefone.
+5. O funcionário preenche o campo "Email" com o e-mail do funcionário.
 6. O funcionário clica no botão "Adicionar Funcionário".
 7. O sistema valida os dados inseridos.
 8. O sistema gera um ID único para o funcionário.
