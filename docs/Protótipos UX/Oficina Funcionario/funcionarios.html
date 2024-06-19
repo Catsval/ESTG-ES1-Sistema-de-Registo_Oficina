@@ -110,6 +110,15 @@
 
             document.getElementById('formFuncionario').reset();
         }
+
+        function removeLastFuncionario() {
+            const table = document.querySelector('table tbody');
+            const rows = table.getElementsByTagName('tr');
+            if (rows.length > 0) {
+                table.deleteRow(rows.length - 1);
+                idCounter--; // Decrement the idCounter as well
+            }
+        }
     </script>
 </head>
 <body>
@@ -127,6 +136,14 @@
                 <input type="text" id="nomeFuncionario" name="nomeFuncionario" required>
             </div>
             <div class="form-group">
+                <label for="emailFuncionario">Email:</label>
+                <input type="email" id="emailFuncionario" name="emailFuncionario" required>
+            </div>
+            <div class="form-group">
+                <label for="emailFuncionario">Password:</label>
+                <input type="password" id="emailFuncionario" name="emailFuncionario" required>
+            </div>
+            <div class="form-group">
                 <label for="cargoFuncionario">Cargo:</label>
                 <input type="text" id="cargoFuncionario" name="cargoFuncionario" required>
             </div>
@@ -134,11 +151,8 @@
                 <label for="contactoFuncionario">Contacto:</label>
                 <input type="text" id="contactoFuncionario" name="contactoFuncionario" required>
             </div>
-            <div class="form-group">
-                <label for="emailFuncionario">Email:</label>
-                <input type="email" id="emailFuncionario" name="emailFuncionario" required>
-            </div>
             <button type="submit" class="btn">Adicionar Funcionário</button>
+            <button type="button" class="btn" onclick="removeLastFuncionario()">Remover Último Funcionário</button>
         </form>
         
         <table>
