@@ -7,7 +7,7 @@ Registo de Funcionários
 Funcionário
 
 ## Pré-condições:
-O funcionário deve ter acesso à página de registo de funcionários, estando devidamente autenticado no sistema, se aplicável.
+O funcionário deve ter acesso à página de registo de funcionários, estando devidamente autenticado no sistema.
 
 ## Pós-condições:
 O novo funcionário aparece na lista de funcionários registrados na interface do usuário, visível imediatamente após a inserção dos dados.
