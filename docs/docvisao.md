@@ -17,7 +17,7 @@ A equipa de desenvolvimento é composta por:
 
 ## Características do Produto - Lista de Funcionalidades
 - Autenticação e Controlo de Acesso (Página de Login): Fornece autenticação de utilizadores e controlo de acesso com base em funções, garantindo a segurança das informações.
-- Página Principal: Apresenta links para as funcionalidades essenciais do sistema. Estas funcionalidades são o registo de funcionários e clientes, histórico de serviços e gestão de veículos.
+- Página Inicial: Apresenta links para as funcionalidades essenciais do sistema. Estas funcionalidades são o registo de funcionários e clientes, histórico de serviços e gestão de veículos.
 - Registo de Funcionários: Permite adicionar, visualizar, editar e eliminar informações do funcionário da oficina.
 - Registo de Clientes: Permite registar, visualizar, editar e eliminar informação do cliente, incluindo os seus veículos e histórico de serviços.
 - Gestão de Veículos: Possibilita o registo e a manutenção das informações dos veículos dos clientes, incluindo marca, modelo, ano e matrícula.
