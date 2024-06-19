@@ -10,7 +10,7 @@ Funcionário
 O funcionário deve ter acesso à página de registo de veículos, estando devidamente autenticado no sistema, se aplicável.
 
 ## Pós-condições:
-O novo veículo aparece na lista de veículos registrados na interface do usuário, visível imediatamente após a inserção dos dados.
+O novo veículo aparece na lista de veículos registrados na interface do usuário, visível imediatamente após o registo dos dados.
 
 ## Fluxo Principal:
 1. O funcionário navega para a página de registo de veículos.
