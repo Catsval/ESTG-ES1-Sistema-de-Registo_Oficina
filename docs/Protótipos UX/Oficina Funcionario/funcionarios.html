@@ -20,7 +20,11 @@
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
         }
         h1 {
             text-align: center;
@@ -34,57 +38,164 @@
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .form-group label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
         .form-group input {
-            width: 100%;
+            width: calc(100% - 16px);
             padding: 8px;
-            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
         }
         .btn {
             display: inline-block;
-            background-color: #333;
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-align: center;
             cursor: pointer;
             text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
         }
     </style>
+    <script>
+        let idCounter = 7; // Starting from 7 as there are 6 initial entries
+
+        function addFuncionario(event) {
+            event.preventDefault();
+            const id = idCounter++;
+            const nome = document.getElementById('nomeFuncionario').value;
+            const cargo = document.getElementById('cargoFuncionario').value;
+            const contacto = document.getElementById('contactoFuncionario').value;
+            const email = document.getElementById('emailFuncionario').value;
+
+            const table = document.querySelector('table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${id}</td>
+                <td>${nome}</td>
+                <td>${cargo}</td>
+                <td>${contacto}</td>
+                <td>${email}</td>
+            `;
+            table.appendChild(row);
+
+            document.getElementById('formFuncionario').reset();
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Registo de Funcionários</h1>
         <nav>
-            <a href="index.html" style="color: #fff;">Página Principal</a>
+            <a href="index.html">Página Principal</a>
         </nav>
     </header>
 
     <div class="container">
-        <div class="form-group">
-            <label for="nomeFuncionario">Nome:</label>
-            <input type="text" id="nomeFuncionario" name="nomeFuncionario">
-        </div>
-        <div class="form-group">
-            <label for="cargoFuncionario">Cargo:</label>
-            <input type="text" id="cargoFuncionario" name="cargoFuncionario">
-        </div>
-        <button class="btn">Adicionar Funcionário</button>
+        <form id="formFuncionario" onsubmit="addFuncionario(event)">
+            <div class="form-group">
+                <label for="nomeFuncionario">Nome:</label>
+                <input type="text" id="nomeFuncionario" name="nomeFuncionario" required>
+            </div>
+            <div class="form-group">
+                <label for="cargoFuncionario">Cargo:</label>
+                <input type="text" id="cargoFuncionario" name="cargoFuncionario" required>
+            </div>
+            <div class="form-group">
+                <label for="contactoFuncionario">Contacto:</label>
+                <input type="text" id="contactoFuncionario" name="contactoFuncionario" required>
+            </div>
+            <div class="form-group">
+                <label for="emailFuncionario">Email:</label>
+                <input type="email" id="emailFuncionario" name="emailFuncionario" required>
+            </div>
+            <button type="submit" class="btn">Adicionar Funcionário</button>
+        </form>
+        
         <table>
-            <tr>
-                <th>Nome</th>
-                <th>Cargo</th>
-                <th>Ações</th>
-            </tr>
-            <!-- Dados dos funcionários -->
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Contacto</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dos funcionários -->
+                <tr>
+                    <td>1</td>
+                    <td>João Silva</td>
+                    <td>Gerente</td>
+                    <td>912345678</td>
+                    <td>joao.silva@empresa.com</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Santos</td>
+                    <td>Assistente</td>
+                    <td>919876543</td>
+                    <td>maria.santos@empresa.com</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Carlos Oliveira</td>
+                    <td>Engenheiro</td>
+                    <td>910111213</td>
+                    <td>carlos.oliveira@empresa.com</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ana Costa</td>
+                    <td>Recepcionista</td>
+                    <td>914567890</td>
+                    <td>ana.costa@empresa.com</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pedro Martins</td>
+                    <td>Técnico</td>
+                    <td>913456789</td>
+                    <td>pedro.martins@empresa.com</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fernanda Lima</td>
+                    <td>Analista</td>
+                    <td>916789012</td>
+                    <td>fernanda.lima@empresa.com</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>

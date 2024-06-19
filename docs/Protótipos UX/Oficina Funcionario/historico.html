@@ -68,6 +68,7 @@
             border-radius: 4px;
             font-size: 14px;
             transition: background-color 0.3s;
+            margin-right: 10px;
         }
         .btn:hover {
             background-color: #0056b3;
@@ -86,40 +87,71 @@
             color: #0056b3;
         }
     </style>
+    <script>
+        let idCounter = 107; // Starting from 107 as there are 6 initial entries
+
+        function addServico(event) {
+            event.preventDefault();
+            const idCliente = document.getElementById('idCliente').value;
+            const idVeiculo = document.getElementById('idVeiculo').value;
+            const dataServico = document.getElementById('dataServico').value;
+            const descricaoServico = document.getElementById('descricaoServico').value;
+            const valorServico = document.getElementById('valorServico').value;
+            const opcoesServico = document.getElementById('opcoesServico').value;
+
+            const table = document.querySelector('table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${idCliente}</td>
+                <td>${idVeiculo}</td>
+                <td>${dataServico}</td>
+                <td>${descricaoServico}</td>
+                <td>€ ${parseFloat(valorServico).toFixed(2)}</td>
+                <td>${opcoesServico}</td>
+            `;
+            table.appendChild(row);
+
+            document.getElementById('formServico').reset();
+        }
+
+        function removeLastServico() {
+            const table = document.querySelector('table tbody');
+            const rows = table.getElementsByTagName('tr');
+            if (rows.length > 0) {
+                table.deleteRow(rows.length - 1);
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Histórico de Serviços</h1>
         <nav>
-            <a href="index.html" style="color: #fff;">Página Principal</a>
+            <a href="index.html">Página Principal</a>
         </nav>
     </header>
 
     <div class="container">
-        <form id="formServico">
+        <form id="formServico" onsubmit="addServico(event)">
             <div class="form-group">
                 <label for="idCliente">ID do Cliente:</label>
                 <input type="text" id="idCliente" name="idCliente" required>
-                <small>Identificação única do cliente associado ao serviço.</small>
             </div>
             <div class="form-group">
                 <label for="idVeiculo">ID de Veículo:</label>
                 <input type="text" id="idVeiculo" name="idVeiculo" required>
-                <small>Identificação única do veículo relacionado ao serviço.</small>
             </div>
             <div class="form-group">
                 <label for="dataServico">Data:</label>
                 <input type="date" id="dataServico" name="dataServico" required>
-                <small>Data em que o serviço foi realizado.</small>
             </div>
             <div class="form-group">
                 <label for="descricaoServico">Estado do Carro / Queixa do Cliente:</label>
                 <textarea id="descricaoServico" name="descricaoServico" required></textarea>
-                <small>Estado atual do carro ou queixa detalhada do cliente.</small>
             </div>
             <div class="form-group">
                 <label for="valorServico">Valor:</label>
-                <input type="number" id="valorServico" name="valorServico" required>
+                <input type="number" id="valorServico" name="valorServico" step="0.01" required>
                 <small>Valor do serviço em euros.</small>
             </div>
             <div class="form-group">
@@ -137,6 +169,7 @@
                 <small>Dropdown com as opções de serviço fornecidas pela oficina.</small>
             </div>
             <button type="submit" class="btn">Adicionar Serviço</button>
+            <button type="button" class="btn" onclick="removeLastServico()">Remover Último Serviço</button>
         </form>
         
         <table>
@@ -157,7 +190,7 @@
                     <td>ABC123</td>
                     <td>2023-05-15</td>
                     <td>Carro com barulho estranho na roda dianteira esquerda</td>
-                    <td>€ 250,00</td>
+                    <td>€ 250.00</td>
                     <td>Manutenção Preventiva</td>
                 </tr>
                 <tr>
@@ -165,7 +198,7 @@
                     <td>XYZ456</td>
                     <td>2023-06-20</td>
                     <td>Carro apresentando falhas no sistema de ar condicionado</td>
-                    <td>€ 350,00</td>
+                    <td>€ 350.00</td>
                     <td>Substituição de Peças</td>
                 </tr>
                 <tr>
@@ -173,7 +206,7 @@
                     <td>DEF789</td>
                     <td>2023-07-10</td>
                     <td>Carro não liga de manhã sem causa aparente</td>
-                    <td>€ 500,00</td>
+                    <td>€ 500.00</td>
                     <td>Reparação de Motor</td>
                 </tr>
                 <tr>
@@ -181,7 +214,7 @@
                     <td>GHI012</td>
                     <td>2023-08-05</td>
                     <td>Carro precisa de troca de óleo e filtro devido a quilometragem alta</td>
-                    <td>€ 150,00</td>
+                    <td>€ 150.00</td>
                     <td>Troca de Óleo</td>
                 </tr>
                 <tr>
@@ -189,19 +222,7 @@
                     <td>JKL345</td>
                     <td>2023-09-12</td>
                     <td>Carro com ruído estranho no motor ao acelerar</td>
-                    <td>€ 300,00</td>
+                    <td>€ 300.00</td>
                     <td>Revisão Geral</td>
                 </tr>
-                <tr>
-                    <td>106</td>
-                    <td>MNO678</td>
-                    <td>2023-10-25</td>
-                    <td>Carro com luz de alerta no painel indicando problema no sistema elétrico</td>
-                    <td>€ 100,00</td>
-                    <td>Limpeza do Sistema de Ar Condicionado</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</body>
-</html>
+

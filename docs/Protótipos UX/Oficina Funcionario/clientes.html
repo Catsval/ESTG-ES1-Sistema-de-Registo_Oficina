@@ -20,7 +20,11 @@
         .container {
             width: 80%;
             margin: auto;
-            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
         }
         h1 {
             text-align: center;
@@ -34,57 +38,186 @@
             border: 1px solid #ddd;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: left;
         }
         .form-group {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
         .form-group label {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-weight: bold;
         }
         .form-group input, .form-group textarea {
-            width: 100%;
+            width: calc(100% - 16px);
             padding: 8px;
-            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
         }
         .btn {
             display: inline-block;
-            background-color: #333;
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 15px;
+            padding: 10px 20px;
             text-align: center;
             cursor: pointer;
             text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #0056b3;
         }
     </style>
+    <script>
+        let idCounter = 7; // Starting from 7 as there are 6 initial entries
+
+        function addCliente(event) {
+            event.preventDefault();
+            const id = idCounter++;
+            const nome = document.getElementById('nomeCliente').value;
+            const veiculos = document.getElementById('veiculosCliente').value;
+            const contacto = document.getElementById('contactoCliente').value;
+            const email = document.getElementById('emailCliente').value;
+            const morada = document.getElementById('moradaCliente').value;
+
+            const table = document.querySelector('table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${id}</td>
+                <td>${nome}</td>
+                <td>${veiculos}</td>
+                <td>${contacto}</td>
+                <td>${email}</td>
+                <td>${morada}</td>
+            `;
+            table.appendChild(row);
+
+            document.getElementById('formCliente').reset();
+        }
+
+        function removeLastCliente() {
+            const table = document.querySelector('table tbody');
+            const rows = table.getElementsByTagName('tr');
+            if (rows.length > 0) {
+                table.deleteRow(rows.length - 1);
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Registo de Clientes</h1>
         <nav>
-            <a href="index.html" style="color: #fff;">Página Principal</a>
+            <a href="index.html">Página Principal</a>
         </nav>
     </header>
 
     <div class="container">
-        <div class="form-group">
-            <label for="nomeCliente">Nome:</label>
-            <input type="text" id="nomeCliente" name="nomeCliente">
-        </div>
-        <div class="form-group">
-            <label for="veiculosCliente">Veículos:</label>
-            <textarea id="veiculosCliente" name="veiculosCliente"></textarea>
-        </div>
-        <button class="btn">Adicionar Cliente</button>
+        <form id="formCliente" onsubmit="addCliente(event)">
+            <div class="form-group">
+                <label for="nomeCliente">Nome:</label>
+                <input type="text" id="nomeCliente" name="nomeCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="veiculosCliente">Veículos:</label>
+                <textarea id="veiculosCliente" name="veiculosCliente" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="contactoCliente">Contacto:</label>
+                <input type="text" id="contactoCliente" name="contactoCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="emailCliente">Email:</label>
+                <input type="email" id="emailCliente" name="emailCliente" required>
+            </div>
+            <div class="form-group">
+                <label for="moradaCliente">Morada:</label>
+                <textarea id="moradaCliente" name="moradaCliente" required></textarea>
+            </div>
+            <button type="submit" class="btn">Adicionar Cliente</button>
+            <button type="button" class="btn" onclick="removeLastCliente()">Remover Último Cliente</button>
+        </form>
+        
         <table>
-            <tr>
-                <th>Nome</th>
-                <th>Veículos</th>
-                <th>Ações</th>
-            </tr>
-            <!-- Dados dos clientes -->
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Veículos</th>
+                    <th>Contacto</th>
+                    <th>Email</th>
+                    <th>Morada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados dos clientes -->
+                <tr>
+                    <td>1</td>
+                    <td>José Almeida</td>
+                    <td>Ford Fiesta, Renault Clio</td>
+                    <td>912345678</td>
+                    <td>jose.almeida@exemplo.com</td>
+                    <td>Rua das Flores, 123</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Carvalho</td>
+                    <td>Peugeot 208, Citroen C3</td>
+                    <td>919876543</td>
+                    <td>maria.carvalho@exemplo.com</td>
+                    <td>Avenida dos Aliados, 456</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Luís Pereira</td>
+                    <td>Honda Civic</td>
+                    <td>910111213</td>
+                    <td>luis.pereira@exemplo.com</td>
+                    <td>Rua da Liberdade, 789</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ana Costa</td>
+                    <td>BMW X1</td>
+                    <td>914567890</td>
+                    <td>ana.costa@exemplo.com</td>
+                    <td>Travessa do Sol, 101</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Carlos Mendes</td>
+                    <td>Mercedes A-Class</td>
+                    <td>913456789</td>
+                    <td>carlos.mendes@exemplo.com</td>
+                    <td>Rua das Palmeiras, 202</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Fernanda Lima</td>
+                    <td>Volkswagen Golf</td>
+                    <td>916789012</td>
+                    <td>fernanda.lima@exemplo.com</td>
+                    <td>Avenida da República, 303</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </body>

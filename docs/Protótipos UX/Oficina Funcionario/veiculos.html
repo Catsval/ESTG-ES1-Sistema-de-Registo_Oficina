@@ -86,6 +86,44 @@
             color: #0056b3;
         }
     </style>
+    <script>
+        let idCounter = 107; // Starting from 107 as there are 6 initial entries
+
+        function addVeiculo(event) {
+            event.preventDefault();
+            const idCliente = document.getElementById('idCliente').value;
+            const dataRegistro = document.getElementById('dataRegistro').value;
+            const marcaVeiculo = document.getElementById('marcaVeiculo').value;
+            const modeloVeiculo = document.getElementById('modeloVeiculo').value;
+            const anoVeiculo = document.getElementById('anoVeiculo').value;
+            const matriculaVeiculo = document.getElementById('matriculaVeiculo').value;
+
+            const table = document.querySelector('table tbody');
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>${idCliente}</td>
+                <td>${idCounter}</td>
+                <td>${dataRegistro}</td>
+                <td>${marcaVeiculo}</td>
+                <td>${modeloVeiculo}</td>
+                <td>${anoVeiculo}</td>
+                <td>${matriculaVeiculo}</td>
+            `;
+            table.appendChild(row);
+
+            idCounter++;
+            document.getElementById('formVeiculo').reset();
+        }
+
+        function removeLastVeiculo() {
+            const table = document.querySelector('table tbody');
+            const rows = table.getElementsByTagName('tr');
+            if (rows.length > 0) {
+                table.deleteRow(rows.length - 1);
+                idCounter--; // Decrement the idCounter as well
+            }
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -96,7 +134,7 @@
     </header>
 
     <div class="container">
-        <form id="formVeiculo">
+        <form id="formVeiculo" onsubmit="addVeiculo(event)">
             <div class="form-group">
                 <label for="idCliente">ID do Cliente:</label>
                 <input type="text" id="idCliente" name="idCliente" required>
@@ -122,6 +160,7 @@
                 <input type="text" id="matriculaVeiculo" name="matriculaVeiculo" required>
             </div>
             <button type="submit" class="btn">Adicionar Veículo</button>
+            <button type="button" class="btn" onclick="removeLastVeiculo()">Remover Último Veículo</button>
         </form>
         
         <table>
