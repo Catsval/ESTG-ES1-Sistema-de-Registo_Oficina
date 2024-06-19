@@ -3,7 +3,6 @@
 **Como** um funcionário da oficina,  
 **Gostaria de** acessar a página de gestão de veículos,  
 **Para que** que eu possa adicionar, editar e visualizar informações detalhadas sobre os veículos atendidos na oficina.
-(SÓ EXISTE A FUNCIONALIDADE DE ADICIONAR VEICULOS)
 **Critérios de Aceitação**:
 1. **Exibição de Veículos**: A página deve exibir uma lista completa dos veículos registrados na oficina, incluindo detalhes como:
    - Marca do veículo
