@@ -11,8 +11,4 @@ A equipa de desenvolvimento é composta por:
 ## Tecnologias Utilizadas
 
 - **Linguagem de Programação:** Java/HTML/CSS
-  
-- **Framework/Frameworks:** BootStrap
-  
-- **Banco de Dados:** MySQL
 
