@@ -10,7 +10,7 @@ Funcionário
 O funcionário deve ter acesso à página de registo de funcionários, estando devidamente autenticado no sistema.
 
 ## Pós-condições:
-O novo funcionário aparece na lista de funcionários registrados na interface do usuário, visível imediatamente após a inserção dos dados.
+O novo funcionário aparece na lista de funcionários registados na interface do utilizador, visível imediatamente após o registo dos dados.
 
 ## Fluxo Principal:
 1. O funcionário navega para a página de registo de funcionários.
