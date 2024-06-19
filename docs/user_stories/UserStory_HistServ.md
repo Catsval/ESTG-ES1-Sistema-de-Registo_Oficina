@@ -16,7 +16,6 @@
     - Descrição: Descrição detalhada do serviço realizado.
     - Valor: Valor do serviço.
     - Opções de Serviço: Dropdown com as opções de serviço fornecidas pela oficina.
-3. **Filtros e Pesquisa:** A página deve permitir a filtragem e pesquisa dos serviços por diferentes critérios, como data, veículo, cliente e funcionário.
-4. **Acesso Restrito:** Todos os funcionários devem ter acesso à página de gestão do histórico de serviços e suas funcionalidades.
-5. **Testes de Usabilidade:** A funcionalidade da página de gestão do histórico de serviços deve ser testada com utilizadores reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
+3. **Acesso Restrito:** Todos os funcionários devem ter acesso à página de gestão do histórico de serviços e suas funcionalidades.
+4. **Testes de Usabilidade:** A funcionalidade da página de gestão do histórico de serviços deve ser testada com utilizadores reais (funcionários) para garantir que atenda às suas necessidades e expectativas de forma eficaz.
 
