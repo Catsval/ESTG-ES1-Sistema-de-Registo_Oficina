@@ -1,4 +1,4 @@
-# User Story: Recuperação de Credenciais
+### User Story: Recuperação de Credenciais
 
 **Como** funcionário autorizado da oficina mecânica,  
 **Quero** recuperar as minhas credenciais de acesso em caso de esquecimento,  
